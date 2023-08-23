@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body class = "bg-[#2b2e3b] text-white font-poppins ">
+    <div class = " blurr  fixed top-0 left-0 w-auto h-20 md:h-[4.1rem]"></div>
+    <nav class = "z-10 blurr fixed w-[100%]">
+        <div  class = "px-20 py-5 bg-[#21232c] md:flex md:items-center md:justify-between">
+            <div class = "flex justify-between items-center">
+                <div class = " font-bold text-xl">A<span class = " text-[#00cc8f]">/</span>mol</div>
+                <div class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon id = "togggle" name="menu" onclick="Menu(this)"></ion-icon>
+                </div>
+            </div>
+            <div>
+                <!-- <ul class = "flex md:flex-row md: flex-col items-center gap-14"> -->
+                <!-- <ul class = "flex md:flex-row md: flex-col items-center gap-14 z-[-1]"> -->
+                <!-- <ul class = "bg-[#2342cc] md:flex md:items-center z-[-1] md:z-auto md:fixed absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-72 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-14"> -->
+                <!-- <ul class = "bg-[#21232c] flex md:flex-row flex-col items-center z-[-1] md:z-auto md:fixed absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 gap-10"> -->
+                    <ul class=" bg-[#21232c] flex md:flex-row md: flex-col items-center gap-14 z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                    <li>
+                        <a class = "hover:text-[#00cc8f] duration-500" onclick="Menu(this)" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class = "hover:text-[#00cc8f] duration-500" onclick="Menu(this)" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class = "hover:text-[#00cc8f] duration-500" onclick="Menu(this)" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class = "hover:text-[#00cc8f] duration-500" onclick="Menu(this)" href="#project">Projects</a>
+                    </li>
+                    <li>
+                        <a class = "hover:text-[#00cc8f] duration-500" onclick="Menu(this)" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class = "top-0 left-0 w-auto h-20 md:h-[4.1rem]"></div>
+    <div class = "text-xl p-10  md:py-10 md:px-36 flex flex-col items-center justify-center text-center md:gap-10 gap-20">
+
+        <!-- ----------------------------------- Home -------------------------------------->
+
+        <div id = "home" class = " w-[100%] md:pt-32 flex flex-col md:flex-row justify-around items-center gap-10">
+            <div class = "flex flex-col md:w-[40%] md:items-start items-center gap-5 md:text-start">
+                <div>Hello, <span class = "text-[#00cc8f]">I'm</span></div>
+                <div class ="hover:rotate-180 transition-all ease-out duration-500 text-[#00cc8f] text-[3rem] font-extrabold">Amol</div>
+                <div class = "text-2xl">Full Stack Developer</div>
+                <div class="text-sm z-[-1] opacity-[50%]">With knowledge in web Developer and Design, I offer the best projects resultig in quality works.</div>
+                <div><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-10 py-2 rounded-[10px]">Resume</button></div>
+                <div class = "flex flex-row gap-5 " class = "">
+                    <div><a href="https://github.com/Amol0501" ><svg xmlns="http://www.w3.org/2000/svg" class ="hover:rotate-180 transition-all ease-out duration-500 h-10" height="2em" viewBox="0 0 496 512"><style>svg{fill:#00f58f}</style><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a></div>
+                    <div><a href="https://www.linkedin.com/in/amol-aggarwal-229339243/"><svg xmlns="http://www.w3.org/2000/svg" class ="hover:-rotate-180 transition-all ease-out duration-500" height="2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a></div>
+                    <div><a href="https://www.instagram.com/amol_aggarwal_/"><svg xmlns="http://www.w3.org/2000/svg" class ="hover:-rotate-180 transition-all ease-out duration-500" height="2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></div>
+                </div>
+            </div>
+            <div>
+                <img  class = "rounded-[50%] w-80" src="Images/profile_pic.png" alt="" srcset="">
+            </div>
+        </div>
+
+        <!-- ----------------------------------- About -------------------------------------->
+
+        <div id = "about" class = "md:pt-48 pt-20 w-[100%] flex flex-col md:flex-row-reverse justify-around items-center gap-20">
+            <div class = "flex flex-col md:items-start items-center gap-5 md:text-start md:w-[40%]">
+                <div class = "text-2xl">My <span class = "text-[#00cc8f]">Intro</span></div>
+                <div class = "text-3xl font-semibold">About me</div>
+                <div class="text-sm z-[-1] opacity-[50%]">Hey! 🌟 I'm a third-year CS student at Chitkara University, Punjab 🎓. I'm into competitive programming and love solving tough problems 🧩. I'm all about exploring new tech and collaborating on cool projects 🤝.
+
+                    On a personal note, I'm kind, cheerful, and adaptable 😄. I thrive on challenging assignments and constantly seek growth in the IT world 🚀. I'm a coding enthusiast, with a soft spot for full-stack development 🌐. Let's team up and create something awesome! 👨‍💻🚀</div>
+                <div><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-10 py-2 rounded-[10px]"><a href="#contact">Contact Me</a></button></div>
+            </div>
+            <div>
+                <img  class = "rounded-[50%] w-80" src="Images/profile_pic.png" alt="" srcset="">
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------- Skills -------------------------------------->
+        <div id = "skills" class = "md:pt-40 pt-20 flex p-10 flex-col gap-14">
+            <div class = "text-3xl font-bold">My <span class = "text-[#00cc8f]">Skills</span></div>
+            <div class = "flex md:flex-row flex-col gap-10">
+                <div class = "bg-[#21232c] p-10 rounded-xl flex flex-col gap-14 border-2 border-[#21232c] hover:border-[#00cc8f] transition-all ease-in-out duration-200">
+                    <div class = "text-[#00cc8f]">Software development</div>
+                    <div class = "flex flex-col gap-10 text-left">
+                        <div class = "flex gap-5 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>C++</div>
+                                <div class = "text-sm opacity-25">Advanced</div>
+                            </div>
+                        </div>
+                        <div class = "flex pl-2 gap-9 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>Java</div>
+                                <div class = "text-sm opacity-25">Intermidiate</div>
+                            </div>
+                        </div>
+                        <div class = "flex pr-2 gap-5 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>Python</div>
+                                <div class = "text-sm opacity-25">Basic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "bg-[#21232c] p-10 rounded-xl flex flex-col gap-14 border-2 border-[#21232c] hover:border-[#00cc8f] transition-all ease-in-out duration-200">
+                    <div class = "text-[#00cc8f]">FrontEnd development</div>
+                    <div class = "flex flex-col gap-10 text-left">
+                        <div class = "flex pl-3 gap-7 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>HTML<span class = "font-semibold text-[#00cc8f]"> / </span>CSS</div>
+                                <div class = "text-sm opacity-25">Advanced</div>
+                            </div>
+                        </div>
+                        <div class = "flex  pl-3 gap-8 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>JavaScript</div>
+                                <div class = "text-sm opacity-25">Intermidiate</div>
+                            </div>
+                        </div>
+                        <div class = "flex gap-5 pr-9 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>React</div>
+                                <div class = "text-sm opacity-25">Basic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "bg-[#21232c] p-10 rounded-xl flex flex-col gap-14 border-2 border-[#21232c] hover:border-[#00cc8f] transition-all ease-in-out duration-200">
+                    <div class = "text-[#00cc8f]">BackEnd development</div>
+                    <div class = "flex flex-col gap-10 text-left">
+                        <div class = "flex gap-5 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>Node Js</div>
+                                <div class = "text-sm opacity-25">Basic</div>
+                            </div>
+                        </div>
+                        <div class = "flex gap-5 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>FireBase</div>
+                                <div class = "text-sm opacity-25">Basic</div>
+                            </div>
+                        </div>
+                        <div class = "flex gap-6 pl-2 justify-around">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+                            <div>
+                                <div>MongoDB</div>
+                                <div class = "text-sm opacity-25">Basic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------------- Project -------------------------------------->
+        
+        <div id = "project" class ="md:pt-40 pt-20 flex flex-col gap-14">
+            <div class = "text-3xl font-bold">My <span class = "text-[#00cc8f]">Projects</span></div>
+            <!-- <div class = "bg-[#21232c] p-10 rounded-xl flex flex-col md:flex-row justify-between gap-14 border-2 border-[#21232c] transition-all ease-in-out duration-200"> -->
+            <div class = " flex flex-col lg:flex-row justify-between gap-10 ">
+                <!-- <div class = "bg-[#21232c] p-10 rounded-xl flex flex-col gap-10 items-center border-2 border-[#21232c] hover:border-[#00cc8f] transition-all ease-in-out duration-200"> -->
+                <div class = "bg-[#21232c] p-8 rounded-xl flex flex-col gap-10 items-center border-2 border-[#21232c] hover:border-[#00cc8f] transition-all ease-in-out duration-200">
+                    <div class = "text-xl font-medium text-[#00cc8f]">Weather App</div>
+                    <div class = "flex flex-col gap-8">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 640 512"><style>svg{fill:#00f58f}</style><path d="M0 336c0 79.5 64.5 144 144 144H512c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z"/></svg> -->
+                        <!-- <img src="Images/clouds.png" alt="" srcset=""> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 640 512"><style>svg{fill:#00f58f}</style><path d="M495.8 0c5.5 0 10.9 .2 16.3 .7c7 .6 12.8 5.7 14.3 12.5s-1.6 13.9-7.7 17.3c-44.4 25.2-74.4 73-74.4 127.8c0 81 65.5 146.6 146.2 146.6c8.6 0 17-.7 25.1-2.1c6.9-1.2 13.8 2.2 17 8.5s1.9 13.8-3.1 18.7c-34.5 33.6-81.7 54.4-133.6 54.4c-9.3 0-18.4-.7-27.4-1.9c-11.2-22.6-29.8-40.9-52.6-51.7c-2.7-58.5-50.3-105.3-109.2-106.7c-1.7-10.4-2.6-21-2.6-31.8C304 86.1 389.8 0 495.8 0zM447.9 431.9c0 44.2-35.8 80-80 80H96c-53 0-96-43-96-96c0-47.6 34.6-87 80-94.6l0-1.3c0-53 43-96 96-96c34.9 0 65.4 18.6 82.2 46.4c13-9.1 28.8-14.4 45.8-14.4c44.2 0 80 35.8 80 80c0 5.9-.6 11.7-1.9 17.2c37.4 6.7 65.8 39.4 65.8 78.7z"/></svg>
+                        <div class = "opacity-25 text-sm">HTML, CSS, JavaScript, Fetch API</div>
+                    </div>
+                    <div class = "flex justify-between gap-10">
+                        <div><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-6 py-2  rounded-[10px]"><a href="https://github.com/Amol0501/Weather-App/" target="_blank">Code</a></button></div>
+                        <div><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-6 py-2 rounded-[10px]"><a href="https://amol0501.github.io/Weather-App/" target="_blank">Demo</a></button></div>
+                    </div>
+                </div>
+                <div class = "bg-[#21232c] p-10 rounded-xl flex flex-col gap-10 items-center border-2 border-[#21232c] hover:border-[#00cc8f] transition-all ease-in-out duration-200">
+                    <div class = "text-xl font-medium text-[#00cc8f]">Restauract Meal</div>
+                    <div class = "flex flex-col gap-8">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 640 512"><style>svg{fill:#00f58f}</style><path d="M0 336c0 79.5 64.5 144 144 144H512c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z"/></svg> -->
+                        <!-- <img src="Images/clouds.png" alt="" srcset=""> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 448 512"><style>svg{fill:#00f58f}</style><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>
+                        <div class = "opacity-25 text-sm">HTML, CSS, React, FireBase</div>
+                    </div>
+                    <div class = "flex justify-between gap-10">
+                        <div><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-6 py-2 rounded-[10px]"><a href="https://github.com/Amol0501/ReactMeal" target="_blank">Code</a></button></div>
+                        <div><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-6 py-2 rounded-[10px]"><a href="https://amol0501.github.io/Weather-App/" target="_blank">Demo</a></button></div>
+                    </div>
+                </div>
+                <div class = "bg-[#21232c] p-10 rounded-xl flex flex-col gap-10 items-center border-2 border-[#21232c] hover:border-[#00cc8f] transition-all ease-in-out duration-200">
+                    <div class = "text-xl font-medium text-[#00cc8f]">Pong Game</div>
+                    <div class = "flex flex-col gap-8">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 640 512"><style>svg{fill:#00f58f}</style><path d="M0 336c0 79.5 64.5 144 144 144H512c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z"/></svg> -->
+                        <!-- <img src="Images/clouds.png" alt="" srcset=""> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="4em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#00f58f}</style><path d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"/></svg>
+                        <div class = "opacity-25 text-sm">C++, RayLib Library</div>
+                    </div>
+                    <div class = "flex justify-between gap-10">
+                        <div><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-6 py-2 rounded-[10px]"><a href="https://github.com/Amol0501/Pong-Game/" target="_blank">Code</a></button></div>
+                        <div><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-6 py-2 rounded-[10px]"><a href="https://amol0501.github.io/Weather-App/" target="_blank">Demo</a></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ----------------------------------- Contact -------------------------------------->
+
+        <div id = "contact" class = "md:pt-40 flex flex-col gap-10 justify-center">
+            <div class = "flex flex-col gap-2">
+                <div class = "">Get in <span class = "text-[#00cc8f]">Touch</span></div>
+                <div class = "font-semibold text-3xl">Contact Me</div>
+            </div>
+            <form class = "grid grid-cols-1 md:grid-cols-2 md:gap-5 gap-4 ">
+                <input class = "text-lg bg-[#21232c] px-7 py-4 rounded-xl col-span-1 outline-[#00cc8f]" type="text" placeholder="Enter your name">
+                <input class = "text-lg bg-[#21232c] px-7 py-4 rounded-xl col-span-1" type="email" placeholder="Enter your email">
+                <textarea class = "text-lg bg-[#21232c] px-7 py-4 rounded-xl col-span-1 md:col-span-2 resize-none" rows="8" placeholder="Enter your message"></textarea>
+                <div class = "md:col-span-2 col-span-1"><button class = "bg-[#00cc8f] hover:bg-[#057a57] px-10 py-2 rounded-[10px]">Send Message</button></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function Menu(e){
+          let list = document.querySelector('ul');
+          let togggle = document.querySelector('#togggle');
+          togggle.name === 'menu' ? (togggle.name = "close",list.classList.add('top-[70px]') , list.classList.add('opacity-100')) :( togggle.name = "menu" ,list.classList.remove('top-[70px]'),list.classList.remove('opacity-100'))
+        }
+      </script>
+</body>
+</html>
