@@ -570,10 +570,6 @@ video {
   grid-column: span 1 / span 1;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -667,10 +663,6 @@ video {
   gap: 5rem;
 }
 
-.gap-32 {
-  gap: 8rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -716,11 +708,6 @@ video {
   border-color: rgb(33 35 44 / var(--tw-border-opacity));
 }
 
-.border-\[\#00cc8f\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 204 143 / var(--tw-border-opacity));
-}
-
 .bg-\[\#00cc8f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 204 143 / var(--tw-bg-opacity));
@@ -745,10 +732,6 @@ video {
   padding: 2.5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -763,9 +746,24 @@ video {
   padding-right: 5rem;
 }
 
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -781,21 +779,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pl-2 {
@@ -905,6 +888,10 @@ video {
   opacity: 0.25;
 }
 
+.opacity-40 {
+  opacity: 0.4;
+}
+
 .opacity-\[50\%\] {
   opacity: 50%;
 }
@@ -994,19 +981,9 @@ input:focus, textarea:focus {
   background-color: rgb(5 122 87 / var(--tw-bg-opacity));
 }
 
-.hover\:fill-\[\#057a57\]:hover {
-  fill: #057a57;
-}
-
 .hover\:text-\[\#00cc8f\]:hover {
   --tw-text-opacity: 1;
   color: rgb(0 204 143 / var(--tw-text-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:flex-row {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1024,18 +1001,6 @@ input:focus, textarea:focus {
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-
-  .md\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-
-  .md\:mt-16 {
-    margin-top: 4rem;
-  }
-
-  .md\:mt-20 {
-    margin-top: 5rem;
   }
 
   .md\:flex {
@@ -1082,12 +1047,12 @@ input:focus, textarea:focus {
     justify-content: space-between;
   }
 
-  .md\:gap-5 {
-    gap: 1.25rem;
-  }
-
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
 
   .md\:px-36 {
@@ -1100,16 +1065,6 @@ input:focus, textarea:focus {
     padding-bottom: 0px;
   }
 
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1119,32 +1074,16 @@ input:focus, textarea:focus {
     padding-left: 0px;
   }
 
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-
-  .md\:pt-16 {
-    padding-top: 4rem;
-  }
-
   .md\:pt-32 {
     padding-top: 8rem;
   }
 
-  .md\:pt-52 {
-    padding-top: 13rem;
-  }
-
-  .md\:pt-36 {
-    padding-top: 9rem;
+  .md\:pt-40 {
+    padding-top: 10rem;
   }
 
   .md\:pt-48 {
     padding-top: 12rem;
-  }
-
-  .md\:pt-40 {
-    padding-top: 10rem;
   }
 
   .md\:text-start {
