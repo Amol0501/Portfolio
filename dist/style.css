@@ -718,11 +718,6 @@ video {
   background-color: rgb(33 35 44 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#2342cc\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 66 204 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#2b2e3b\] {
   --tw-bg-opacity: 1;
   background-color: rgb(43 46 59 / var(--tw-bg-opacity));
@@ -787,14 +782,6 @@ video {
 
 .pl-3 {
   padding-left: 0.75rem;
-}
-
-.pl-7 {
-  padding-left: 1.75rem;
-}
-
-.pl-72 {
-  padding-left: 18rem;
 }
 
 .pr-2 {
@@ -989,10 +976,6 @@ input:focus, textarea:focus {
 @media (min-width: 768px) {
   .md\:static {
     position: static;
-  }
-
-  .md\:fixed {
-    position: fixed;
   }
 
   .md\:z-auto {
